@@ -1,14 +1,13 @@
 // src/components/header.tsx
 
-import React from "react";
 import { Link } from "react-router-dom";
-import "./header.css";
+import styles from "./header.module.scss";
 
-const Header: React.FC = () => {
+const Header = () => {
 	return (
-		<header className='header'>
-			<nav className='navbar'>
-				<ul className='menu'>
+		<header className={styles.header}>
+			<nav className={styles.navbar}>
+				<ul className={styles.menu}>
 					<li>
 						<Link to='/'>Home</Link>
 					</li>
@@ -26,6 +25,5 @@ const Header: React.FC = () => {
 		</header>
 	);
 };
-
 
 export default Header;
